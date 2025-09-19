@@ -1,0 +1,42 @@
+Solicitar al usuario 3 numeros enteros para la operecion
+Mostrar un mensaje de "ingrese 3 numeros (no letras/no caractates especiales)"
+Esos numeros se van a almacenar en:
+n1
+n2
+n3
+
+
+Realizar la suma de los valores y almacenarlo en resultadoSuma
+
+
+Realizar la multiplicacion de los 3 valores y almacenar en resultadoMultiplicacion
+
+Imprimir los valores de resultadosSuma
+
+Imprimir los valores de resultadoMultiplicacion
+
+
+
+
+Ejercicio 1 ----------------------------------------------------
+
+Un estudiante realiza 3 examenes durante  el cuatrimestre, los cuales tienen la misma ponderacion
+Determine el promedio de dichos examenes sabiendo que el profesor debe de ingresar la nota de cada examen.
+
+Tenemos 3 examanes  distintos con el mismo porcentaje y se debe de detarminar el promedio
+
+Definir las variables de los examenes:
+
+examen1
+examen2
+examen3
+
+solicitar las notas de los examenes al profesor
+Se procede a calcualar el promedio de los examenes
+
+Basando en la formula:
+(examen1 + examen2 + examen3) / 3
+
+imprimir el resultado
+
+    
