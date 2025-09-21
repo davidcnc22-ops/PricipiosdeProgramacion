@@ -1,0 +1,15 @@
+Ejercicios 2 - estructuras secuenciales.
+
+Declaracion de las variables
+
+Tenemos  por noche un precio por noche de 100 dolares
+El valor de la cantidad de noches a quedaerse se le solicta al usuario como un numero entero
+El descuento es fijo en un 5 %
+Guardar el resultado del precio final en una variable que se llame totala cobrar
+
+0.Declaracion de las variables 
+1. Le solicitamos al usuario countas noches vamos a estar
+2.realizar el calculo del total a cobrar, en este caso es cant_noches * precio de _habotacion * (0.95)
+
+Total= cantida_noches * precio_habitacion
+Imprimir el resultado total    

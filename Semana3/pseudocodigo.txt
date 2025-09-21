@@ -1,0 +1,33 @@
+Ejercio 2- Estructuras secuenciales
+
+Tenemos el precio por noche de 
+$100
+La cantidad de noches a quedarse se le solicita al ususario como un nuemro entero
+El descuento es fijo en un 5%
+Guardaremos el  resultado del precio final en una variable  que se llame total a cobrar
+
+0.Declaracion de las variables
+1.Solicitar al ususaria cuantas nochas va a estar
+2.Realizar el total a cobrar en este caso cant_noches * precio_habiacion * (095)
+3.Imprimir el resultado
+
+Ejercio 3 Estructuras secuenciales
+
+Declaracion de las variables
+Peso=0.0
+estatura=0.0
+nombre= ""
+datos imc=0.0
+
+Pedir los datos al usuario peso, estatura y nombre
+
+Realizar el calculo del imc
+
+(peso /(estatuta)^2 )
+
+imprimimos el saludo con el nombre y el resultado
+
+
+
+
+
