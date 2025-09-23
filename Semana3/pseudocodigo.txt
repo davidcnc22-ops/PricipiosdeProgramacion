@@ -2,13 +2,13 @@ Ejercio 2- Estructuras secuenciales
 
 Tenemos el precio por noche de 
 $100
-La cantidad de noches a quedarse se le solicita al ususario como un nuemro entero
+La cantidad de noches a quedarse se le solicita al ususario como un numero entero
 El descuento es fijo en un 5%
 Guardaremos el  resultado del precio final en una variable  que se llame total a cobrar
 
 0.Declaracion de las variables
-1.Solicitar al ususaria cuantas nochas va a estar
-2.Realizar el total a cobrar en este caso cant_noches * precio_habiacion * (095)
+1.Solicitar al ususario cuantas noches va a estar
+2.Realizar el total a cobrar en este caso cant_noches * precio_habiacion * (0.95)
 3.Imprimir el resultado
 
 Ejercio 3 Estructuras secuenciales
@@ -37,7 +37,7 @@ Declaracion de variables:
 edad_elena
 edad_ana
 
-solicitar la edad de elena = 
+solicitar la edad de elena = 0
 
 edad_ana = edad_elena * 2 + 10
 
@@ -157,3 +157,34 @@ Solicitar el costo del automovil
 Costo_de_Automovil_Nuevo = Costo_de_Automovil + Ganancia_del_Vendedor + Impuesto
 
 Imprimir el costo final del cosumidor
+
+
+---------------------------------------------------------
+
+Pseudo 9
+
+Hacer un programa que calcuale el costo en colones de los ingredientes utilizados
+
+Declaración de las variables:
+
+descuento_ pan= 0.15
+descuento_tomate= 0.35
+descuento_queso= 0.25
+descuento lechuga= 10
+dasto_total=l 2700 colones
+
+Calcular el procentaje restante para el jamon 100- (porcentaje_pan + porcentaje_tomate + porcenatje_queso + porcentaje
+lechuga)
+
+
+imprimir el valor de cada ingrediente
+
+Escribir "Costo del Pan: ", CostoPan, " colones"
+Escribir "Costo del Tomate: ", CostoTomate, " colones"
+Escribir "Costo del Queso: ", CostoQueso, " colones"
+Escribir "Costo de la Lechuga: ", CostoLechuga, " colones"
+Escribir "Costo del Jamón: ", CostoJamon, " colones"
+
+
+-------------------------------------------------------------------------------------------------
+
