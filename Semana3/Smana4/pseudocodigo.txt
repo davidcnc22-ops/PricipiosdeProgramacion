@@ -1,0 +1,13 @@
+Ejercio 1:
+
+Asigar variables= n=0
+Solicitar al usuaro que ingrese un numero y guardarlo en 
+Si  la operacion numero % 2 es igual a 0 
+Entonces imprimir es impar sino imprimir es impar
+
+Ejercio 2: Mayor de 2 numeros
+1. Declaración de dos variables
+2. Solicitamos los datos al usuario de los dos numeros enteros
+3. Comparamos si numero1 es igual a numero2, entonces impir son iguales sino,  numero 2 es es mayor a nemer
+
+
