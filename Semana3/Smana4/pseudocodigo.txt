@@ -1,13 +1,25 @@
-Ejercio 1:
+----------------- Pseudocodigo -----------------------
 
-Asigar variables= n=0
-Solicitar al usuaro que ingrese un numero y guardarlo en 
-Si  la operacion numero % 2 es igual a 0 
-Entonces imprimir es impar sino imprimir es impar
+Ejercicio 1: 
+1. Asignar variable n = 0
+2. Solicitar el numero al usuario y guardarlo en n
+3. Si la operacion nùmero % 2 es igual 0
+Entonces imprimir es par
+sino imprimir es impar 
 
-Ejercio 2: Mayor de 2 numeros
-1. Declaración de dos variables
-2. Solicitamos los datos al usuario de los dos numeros enteros
-3. Comparamos si numero1 es igual a numero2, entonces impir son iguales sino,  numero 2 es es mayor a nemer
+Ejercicio2:  Mayor de dos números
+1. Declaramos dos variables 
+    numero1 = 0 y numero2 = 0
+2. Solicitamos datos al usuario de los dos numeros enteros
+3. Comparamos si numero1 es mayor a numero 2 
+    entonces imprimimos numero1 es mayor a numero2
+    sino, si numero1 es igual a numero2, entonces
+    imprimir son iguales
+    sino, numero2 es mayor a numero1
 
+Ejercicio3 - Calificacion aprobatoria:
+1. Declarar la variable nota = 0
+2. Solicitar el dato de la nota al usuario
+3. Comprobar si la nota es mayor o igual a 70, entonces
+    imprimir aprobó, sino, imprimimos reprobó
 

@@ -9,7 +9,9 @@ total_a_cobrar=0
 cantidad_noches = int(input("ingrese la cantidad de noches que se va a quedar:"))
                     
 # Operaciones
+
 total_a_cobrar = cantidad_noches * precio_x_noche * 1- (1- descuento/100)
+print(f"Precio con descuento: {"precio_final"}")
 
 # Salida de datos
 
