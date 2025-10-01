@@ -1,4 +1,4 @@
-Solicitar al usuario 3 numeros enteros para la operecion
+Solicitar al usuario 3 numeros enteros para la operacion
 Mostrar un mensaje de "ingrese 3 numeros (no letras/no caractates especiales)"
 Esos numeros se van a almacenar en:
 n1

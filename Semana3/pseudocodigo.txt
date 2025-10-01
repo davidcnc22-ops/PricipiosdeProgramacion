@@ -188,3 +188,38 @@ Escribir "Costo del Jamón: ", CostoJamon, " colones"
 
 -------------------------------------------------------------------------------------------------
 
+ejercio 5
+
+Ingersar el total la compra
+aplicar el porcentaje del descuento en el  caso de que la compra sea mayor a 100
+indicar que no aplica el descuento si la compra es menos a 100
+proporcionar el precio final
+
+-------------------------------------------------------------------------------------------------
+
+ejercio 6
+
+Ingresar numero1
+ingresar numero2
+sumar numero1 + numero2
+restar numero1 - numero 2
+multiplicar numero1 * numero2
+dividir numero1 / numero2 
+imprimir el resultado   
+validar la operacion
+
+----------------------------------------------------------------------------------------------------
+
+
+ejercio 7
+
+ingresar un numero entero y darle un valor a la letra correspondiente
+asignar el valor a cada letra
+ingresar calificacion, si es >= 90 y <= 100, imprimir "A"
+ingresar calificacion, si es >= 80 y <= 89, imprimir "B"
+ingresar calificacion, si es >= 70 y <= 79, imprimir "C"
+ingresar calificacion, si es >= 60 y <=  69, imprimir "D"
+ingresar calificacion, si es >= 0 y <=  59, imprimir "F"
+
+brindar nota con la letra correspondiente
+
