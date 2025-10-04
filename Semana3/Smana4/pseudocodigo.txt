@@ -23,3 +23,139 @@ Ejercicio3 - Calificacion aprobatoria:
 3. Comprobar si la nota es mayor o igual a 70, entonces
     imprimir aprobó, sino, imprimimos reprobó
 
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------
+Ejercicio 10: Clasificación de un número
+1. Declarar la variable numero
+2. Solicitar al usuario el numero
+3. Determinar si el numero es positivo si es mayor a o,
+sino, determinar si es negativato si es menor a 0,
+sino, determinar si es un 0
+4. Imprimir el tipo de numero
+
+# Declaracion de variables
+numero = 0.0
+
+# Entrada de datos
+try:
+    numero = float(input("Ingrese un numero: "))
+    if numero > 0:
+        print("El numero es positivo")
+    elif numero < 0:
+        print("El numero es negativo")
+    else:
+        print("El numero es cero")
+except:
+    print("Error: Ingrese un numero valido")
+
+    Ejercicio 11: Determinar el día de la semana
+1. Declarar la variable dia
+2. Solicitar al usuario un numero del 1 al 7
+3. Determinar el dia en base a lo ingresado por el usuario
+si es 1, el dia es lunes,
+si es 2, el dia es martes,
+si es 3, el dia es miercoles,
+si es 4, el dia es jueves,
+si es 5, el dia es viernes,
+si es 6, el dia es sabado,
+si es 7, el dia es domingo,
+si el numero no es del 1 al 7 imprimir un mensaje de error.
+4. Imprimir el dia correspondiente
+
+
+#Ejercicio11
+#Declaracion de variables
+dia = 0
+
+#Entrada de datos
+try:
+    dia = int(input("Ingrese un numero del 1 al 7: "))
+    if dia == 1:
+        print("Lunes")
+    elif dia == 2:
+        print("Martes")
+    elif dia == 3:
+        print("Miercoles")
+    elif dia == 4:
+        print("Jueves")
+    elif dia == 5:
+        print("Viernes")
+    elif dia == 6:
+        print("Sabado")
+    elif dia == 7:
+        print("Domingo")
+    else:
+        print("Error: Ingrese un numero valido del 1 al 7")
+except:
+    print("Error: Ingrese un numero valido")
+    
+    #ejercicio12
+# Declaracion de variables
+anno = 0
+
+# Entrada de datos
+try:
+    anno = int(input("Ingrese el año: "))
+    if (anno % 4 == 0 and anno % 100 != 0):
+        print("Es año bisiesto")
+    elif (anno % 400 == 0):
+        print("Es año bisiesto")
+    else:
+        print("No es año bisiesto")
+except:
+    print("Error: Ingrese un numero valido")
+    
+    
+    
+Ejercicio 12:  Año bisiesto
+1. Declarar la variable anno
+2. Solicitar el año al usuario
+3. Determinar si es un año bisiesto
+si es divisible entre 4 y no es divisible entre 100,
+si es divisible entre 400,
+y no es divisible entre 100,
+sino no es año bisiesto
+4. Imprimir si es año bisiesto
+
+
+
+#Ejercicio13
+# Declaracion de variables
+salario = 0.0
+
+# Entrada de datos
+try:
+    salario = float(input("Ingrese su salario: "))
+    if (salario < 1000):
+        print("No debe pagar impuestos")
+    elif (salario >= 1000 and salario < 2000):
+        print("Debe pagar el 10% de impuestos")
+    else:
+        print("Debe pagar el 20% de impuestos")
+except:
+    print("Error: Ingrese un numero valido")
+    
+    
+    
+Ejercicio 13: Calculo de impuestos
+1. Declarar la variables salario
+2. Solicitar al usuario el salario
+3. Determinar si paga impuestos en base a
+si es menor a 1000, no paga,
+si esta entre 1000 y 2000, paga un 10%,
+si es mayor a 2000, paga un 20%
+4. Imprimir cuanto tiene que pagar de impuestos
+
+
+======================================================================
+
