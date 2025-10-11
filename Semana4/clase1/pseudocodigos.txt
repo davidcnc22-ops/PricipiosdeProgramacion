@@ -1,5 +1,9 @@
 ----------------- Pseudocodigo -----------------------
 
+Ejercio de ejemplo explicado
+
+Se requiere dividir dos números a y b, pero antes de dividir tenemos que validar que el divisor no sea 0, por lo que debemos codificar una condición a cumplir antes de realizar la división
+
 Ejercicio 1: 
 1. Asignar variable n = 0
 2. Solicitar el numero al usuario y guardarlo en n
@@ -158,4 +162,3 @@ si es mayor a 2000, paga un 20%
 
 
 ======================================================================
-

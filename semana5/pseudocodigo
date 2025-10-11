@@ -1,0 +1,5 @@
+ingresar 3 numeros enteros
+realizar la suma de lso 3 numeros
+si la suma de los numeros es mayor a 15, imprimir "precio con descuento"
+si la suma es menor que 15, imprimir "precio sin descuento"
+Si se ingresa una variable que sea diferente a un numero entrero, imprimir "operacion no validad, ingrese un numero entero"
