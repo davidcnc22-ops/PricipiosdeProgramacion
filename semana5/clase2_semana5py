@@ -1,0 +1,88 @@
+# Ejercio 1
+
+"""
+Se va a recibir un numero  entero y obtener la suma total sus digitos
+
+
+"""
+""" # Entrada de datos
+ """
+""" numero = input("ingrese un numero entero:")
+suma_digitos=0
+
+for i in range  (len(numero)): 
+    suma_digitos += int (numero [i])
+
+print(suma_digitos) """
+
+
+
+
+
+""" numero =int(input("ingrese un entero:")) 
+suma_digitos = 0
+
+x = numero % 10
+
+while numero > 0: 
+    suma_digitos += x
+    numero_enetro=numero/10 
+    x = numero % 10
+    
+print(suma_digitos)
+ """
+
+""" numero =int(input("ingrese un entero:")) 
+suma_digitos = 0
+
+x = numero% 10
+
+while numero > 0: 
+    
+    suma_digitos += x
+    numero= numero//10 
+    x = numero % 10
+    
+print (suma_digitos) """
+
+# ejercio 2
+
+"""
+# 
+
+Elavorar un programa que imprima un mensaje final soli si el usuario digita un 0
+
+"""
+
+""" opcion=0
+
+opcion= int(input("Escriba una opcion o digite 0 para salir:")) 
+
+while opcion != 0:
+    print ("Estoy atrapado")
+    opcion = int(input("Escriba una opcion o digite 0 para salir:")) 
+
+print ("Ganamos! Salimos del cliclo") """
+
+menu = "Bienvenido a mi sistema" \
+"1. Para registar usuario\n" \
+"2. Para moficar usuario\n" \
+"3. Para eliminar usuario\n" \
+"0. Para salir "
+
+print (menu)
+opcion = int (input("Escriba  una opción o digite 0 para salir:"))
+while opcion != 0:
+    if opcion ==1:
+        print("Registrando usuario")
+    elif opcion ==2:
+     print("Modificando usuario")
+    elif opcion ==1:
+         print("Eliminando usuario")
+    
+    else:
+        print ("opcion invalida")
+    opcion = int (input("Escriba  una opción o digite 0 para salir:"))
+
+print ("Ganamos! Salimos de ciclo")
+

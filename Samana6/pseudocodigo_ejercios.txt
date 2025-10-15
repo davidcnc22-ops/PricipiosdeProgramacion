@@ -1,0 +1,13 @@
+Solicitar el monto de la compra
+aplicar un descuento de % si el precio es igual o mayor a 100
+si el precio es igual o mayor a 100, imprimir el precio con el descuento ya  aplicado
+si el precio es menor a 100, imprimir el precio del valor del producto sin descuento
+dar un mensaje de "gracias por su compra!"
+
+Diseña un algoritmo que reciba una calificación numérica y devuelva la
+letra correspondiente:
+ A (90-100)
+ B (80-89)
+ C (70-79)
+ D (60-69)
+ F (0-59) 
