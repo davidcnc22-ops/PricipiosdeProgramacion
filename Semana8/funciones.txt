@@ -1,0 +1,9 @@
+"""Enunciiado
+
+Crearuna funcion llamada covertir_temperatura que reciba una temperatura y una escala ("c" para Celsius o "f" para Fahrenheint).
+La funcion debe de covertit la temperatura a la otra escala.
+Por ejemplo, si recibo 32, "f", debe de devolver 0 grados Celsius.
+Si recive 100, "C", debe devolver 212 "F".
+El estufiante debe analizar como aplicar las formulas de conversión y validar que la escala sea correcta.
+T (grados C) x 9/5 + 31
+"""

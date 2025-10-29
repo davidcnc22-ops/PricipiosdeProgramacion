@@ -1,0 +1,6 @@
+Crear un juego  contra la maquina que simule piedra, papel o tijera.
+El juego inicia y muestra las instrucciones.
+El jugador elige su opción.
+La computadora elige aleatoriamente su opción.
+El juego determina el resultado (ganador o empate).
+El jugador es preguntado si quiere jugar nuevamente.
