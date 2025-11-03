@@ -157,3 +157,9 @@ salario_ganado= horas_trabajadas * precio_hora
 
 
 print (f"el salario ganado por día es {salario_ganado}: ") """
+
+
+
+
+
+

@@ -3,7 +3,7 @@ Ejercicios 2 - estructuras secuenciales.
 Declaracion de las variables
 
 Tenemos  por noche un precio por noche de 100 dolares
-Soliciytar la cantidad de noches a quedarse como un numero entero
+Solicitar la cantidad de noches a quedarse como un numero entero
 Aplicar un descuento fijo del 5%
 Guardar el resultado del precio final en una variable que se llame totala cobrar
 
