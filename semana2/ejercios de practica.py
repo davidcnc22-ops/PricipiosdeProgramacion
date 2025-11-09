@@ -300,13 +300,13 @@ anno =int(input("ingrese el año:"))
 
 # Operaciones
 
+
 if anno % 4 ==0:
     print("anio bisiesto")
 elif anno %100 !=0:
     print("anno no bisiesto")
 elif anno % 400==0:
     print("anno bisiesto")  """
-
 
 """ acumulador=0
 contador=0
