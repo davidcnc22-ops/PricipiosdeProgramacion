@@ -1,38 +1,232 @@
-def  mostrar_menu():
-    print("\nMenú:")
-    print("1. Cargar información")
-    print("2. Agregar teléfono")
-    print("3. Eliminar teléfono")
-    print("4. Procesar venta")
-    print("5. Generar reporte")
-    print("6. Salir")
+import random
+
+# Lista de diccionarios que almacena los celulares en memoria
+celulares = []
+modificado = False  # Variable global para saber si hubo cambios
+
+def cargar_informacion(nombre_archivo):
+    global celulares, modificado
+    try:
+        with open(nombre_archivo, "r") as archivo:
+            celulares = []
+            for linea in archivo:
+                id_cel, marca, modelo, precio, stock = linea.strip().split(",")
+                celulares.append({
+                    "id": int(id_cel),
+                    "marca": marca,
+                    "modelo": modelo,
+                    "precio": float(precio),
+                    "stock": int(stock)
+                })
+        print("Información cargada correctamente.\n")
+        modificado = False
+    except FileNotFoundError:
+        print("El archivo no existe. Se creará uno al guardar.\n")
+        celulares = []
 
 
-def main():
-    print("Bienvenido al sistema de venta de celulares")
-    mostrar_menu()
+def mostrar_celulares():
+    if not celulares:
+        print("No hay celulares cargados.\n")
+        return
+    for cel in celulares:
+        print(cel)
+    print()
 
-    opcion = input("Por favor ingrese una opción del 1 al 6: ")
 
-    if opcion == '1':
-        print(" Mostrando lista de teléfonos disponibles...")
-    elif opcion == '2':
-        print(" Agregando un nuevo teléfono al sistema...")
-    elif opcion == '3':
-        print(" Eliminando un teléfono del inventario...")
-    elif opcion == '4':
-        print(" Procesando una venta...")
-    elif opcion == '5':
-        print(" Generando reporte de ventas...")
-    elif opcion == '6':
-        print(" Saliendo del sistema, ¡hasta pronto!")
+def existe_celular(marca, modelo):
+    for cel in celulares:
+        if cel["marca"].lower() == marca.lower() and cel["modelo"].lower() == modelo.lower():
+            return True
+    return False
+
+
+def agregar_stock():
+    global modificado
+
+    marca = input("Marca: ").strip()
+    modelo = input("Modelo: ").strip()
+
+    if existe_celular(marca, modelo):
+        print("Ya existe un celular con esa marca y modelo.\n")
+        return
+
+    try:
+        precio = float(input("Precio: "))
+        if precio < 0:
+            print("El precio no puede ser negativo.\n")
+            return
+
+        cantidad = int(input("Cantidad a agregar: "))
+        if cantidad < 0:
+            print("El stock no puede ser negativo.\n")
+            return
+    except ValueError:
+        print("Entrada inválida.\n")
+        return
+
+    nuevo = {
+        "id": random.randint(1, 5000),
+        "marca": marca,
+        "modelo": modelo,
+        "precio": precio,
+        "stock": cantidad
+    }
+
+    celulares.append(nuevo)
+    modificado = True
+    print("Celular agregado correctamente.\n")
+
+
+def cambiar_precio():
+    global modificado
+    marca = input("Ingrese la marca a modificar precio: ").strip()
+
+    for cel in celulares:
+        if cel["marca"].lower() == marca.lower():
+            try:
+                nuevo_precio = float(input("Nuevo precio: "))
+                if nuevo_precio < 0:
+                    print("El precio no puede ser negativo.\n")
+                    return
+            except ValueError:
+                print("Entrada inválida.\n")
+                return
+
+            cel["precio"] = nuevo_precio
+            modificado = True
+            print("Precio actualizado.\n")
+            return
+
+    print("No se encontró la marca.\n")
+
+
+def cambiar_stock():
+    global modificado
+    try:
+        id_buscar = int(input("ID del celular: "))
+    except ValueError:
+        print("Entrada inválida.\n")
+        return
+
+    for cel in celulares:
+        if cel["id"] == id_buscar:
+            try:
+                nuevo_stock = int(input("Nuevo stock: "))
+                if nuevo_stock < 0:
+                    print("El stock no puede ser negativo.\n")
+                    return
+            except ValueError:
+                print("Entrada inválida.\n")
+                return
+
+            cel["stock"] = nuevo_stock
+            modificado = True
+            print("Stock actualizado.\n")
+            return
+
+    print("No se encontró el ID.\n")
+
+
+def buscar_por_marca():
+    marca = input("Marca a buscar: ").strip()
+    encontrados = [cel for cel in celulares if cel["marca"].lower() == marca.lower()]
+
+    if encontrados:
+        for cel in encontrados:
+            print(cel)
+        print()
     else:
-        print(" Opción no válida. Por favor ingrese un número del 1 al 6.")
+        print("No se encontraron celulares con esa marca.\n")
+
+
+def vender():
+    global modificado
+    marca = input("Marca: ").strip()
+    modelo = input("Modelo: ").strip()
+
+    for cel in celulares:
+        if cel["marca"].lower() == marca.lower() and cel["modelo"].lower() == modelo.lower():
+
+            try:
+                cantidad = int(input("Cantidad a vender: "))
+                if cantidad <= 0:
+                    print("Cantidad inválida.\n")
+                    return
+            except ValueError:
+                print("Entrada inválida.\n")
+                return
+
+            if cantidad > cel["stock"]:
+                print("No hay suficiente stock.\n")
+                return
+
+            cel["stock"] -= cantidad
+            modificado = True
+            print("Venta realizada.\n")
+            return
+
+    print("No se encontró ese celular.\n")
+
+
+def guardar_informacion(nombre_archivo):
+    global modificado
+    if not modificado:
+        print("No hay cambios para guardar.\n")
+        return
+
+    try:
+        with open(nombre_archivo, "w") as archivo:
+            for cel in celulares:
+                linea = f'{cel["id"]},{cel["marca"]},{cel["modelo"]},{cel["precio"]},{cel["stock"]}\n'
+                archivo.write(linea)
+        modificado = False
+        print("Cambios guardados correctamente en celulares.txt.\n")
+    except Exception as e:
+        print(f"Error al guardar: {e}\n")
+
+
+def menu():
+    archivo = "celulares.txt"
+
+    while True:
+        print("===== SISTEMA DE CELULARES =====")
+        print("1. Cargar información")
+        print("2. Agregar stock")
+        print("3. Cambiar precio")
+        print("4. Cambiar stock")
+        print("5. Buscar por marca")
+        print("6. Vender")
+        print("7. Listar celulares")
+        print("8. Guardar cambios")
+        print("9. Salir")
+        opcion = input("Elija una opción: ")
+
+        if opcion == "1":
+            cargar_informacion(archivo)
+        elif opcion == "2":
+            agregar_stock()
+        elif opcion == "3":
+            cambiar_precio()
+        elif opcion == "4":
+            cambiar_stock()
+        elif opcion == "5":
+            buscar_por_marca()
+        elif opcion == "6":
+            vender()
+        elif opcion == "7":
+            mostrar_celulares()
+        elif opcion == "8":
+            guardar_informacion(archivo)
+        elif opcion == "9":
+            guardar = input("¿Desea guardar los cambios antes de salir? (s/n): ").strip().lower()
+            if guardar == "s":
+                guardar_informacion(archivo)
+            print("¡Hasta luego!")
+            break
+        else:
+            print("Opción inválida.\n")
 
 
 if __name__ == "__main__":
-    main()
- 
-
-
-
+    menu()
