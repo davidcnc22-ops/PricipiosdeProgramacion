@@ -1,4 +1,3 @@
-# ...existing code...
 def obtener_entero(prompt="ingrese un numero:"):
     """Solicita un entero al usuario hasta que la entrada sea válida."""
     while True:
